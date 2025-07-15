@@ -1,0 +1,8 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop      # crea el schema cada vez (dev)
+    defer-datasource-initialization: true  # << ACTIVA esto
+  sql:
+    init:
+      mode: always               # obliga a ejecutar data.sql/import.sql
